@@ -1,9 +1,11 @@
 import './App.css';
+import Navbar from '../Navbar';
+import React from 'react';
 
 function App() {
   return (
     <div className="App">
-        <h1>Yo</h1>
+        <Navbar />
     </div>
   );
 }
