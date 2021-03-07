@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+// useStategit is a Hook that lets you add React state to function components
 import { Link } from 'react-router-dom';
 
 function Navbar() {
@@ -7,7 +8,7 @@ function Navbar() {
         <nav className="navbar">
             <div className=".navbar-container">
                 <Link to="/" className="navbar-logo">
-                  DCT
+                  DCT <i class="fab fa-wolf-pack-battalion"></i>
                 </Link>
             </div>
         </nav>
