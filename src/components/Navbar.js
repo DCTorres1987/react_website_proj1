@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-// useStategit is a Hook that lets you add React state to function components
+// useState is a Hook that lets you add React state to function components
 import { Link } from 'react-router-dom';
 
 function Navbar() {
@@ -10,6 +10,8 @@ function Navbar() {
           {/* nav defines a set of navigation links */}
             <div className=".navbar-container">
                 <Link to="/" className="navbar-logo">
+                  {/* allows users to navigate around your application. will render a fully accessible anchor tag with the proper href. */}
+                  {/* setup a relative link that will direct to landing page */}
                   DCT <i class="fab fa-wolf-pack-battalion"></i>
                 </Link>
             </div>
