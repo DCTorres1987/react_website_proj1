@@ -3,6 +3,11 @@ import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
     return (
       <>
       {/* short syntax for Fragment. allows you to return multiple elements and group a list of children without adding extra nodes to the DOM */}
@@ -14,6 +19,31 @@ function Navbar() {
                   {/* setup a relative link that will direct to landing page */}
                   DCT <i class="fab fa-wolf-pack-battalion"></i>
                 </Link>
+                <div className="menu-icon" onClick={handleClick}>
+                  <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+                </div>
+                <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                  <li className="nav-item">
+                    <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                      Home
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/services" className="nav-links" onClick={closeMobileMenu}>
+                      Services
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/products" className="nav-links" onClick={closeMobileMenu}>
+                      Products
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/sign-up" className="nav-links" onClick={closeMobileMenu}>
+                      Sign Up
+                    </Link>
+                  </li>
+                </ul>
             </div>
         </nav>
       </>
