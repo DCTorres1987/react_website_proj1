@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 // useState is a Hook that lets you add React state to function components
 import { Link } from 'react-router-dom';
-import Button from './components/Button';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -57,7 +56,7 @@ function Navbar() {
                     </Link>
                   </li>
                 </ul>
-                {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+                {/* {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>} */}
             </div>
         </nav>
       </>
