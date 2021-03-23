@@ -10,6 +10,14 @@
     z-index: 999;
 }
 
+.navbar-container {
+    align-items: center;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    max-width: 1500px;
+}
+
 .nav-links {
     color: #fff;
     display: flex;
