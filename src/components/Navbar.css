@@ -18,6 +18,17 @@
     max-width: 1500px;
 }
 
+.navbar-logo {
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-size: 2rem;
+    justify-self: start;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
 .nav-links {
     color: #fff;
     display: flex;
