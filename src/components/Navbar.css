@@ -30,18 +30,19 @@
 }
 
 .fa-typo3 {
-    margin-left: 0.5rem;
     font-size: 1.8rem;
+    margin-left: 0.5rem;
 }
 
 .nav-menu {
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-gap: 10px;
+    justify-content: end;
     list-style: none;
+    margin-right: 2rem;
     text-align: center;
     width: 60vw;
-    justify-content: end;
 }
 
 .nav-links {
