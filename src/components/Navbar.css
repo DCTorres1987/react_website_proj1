@@ -38,6 +38,10 @@
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 60vw;
+    justify-content: end;
 }
 
 .nav-links {
