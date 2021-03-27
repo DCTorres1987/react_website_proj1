@@ -45,6 +45,10 @@
     width: 60vw;
 }
 
+.nav-item {
+    height: 80px;
+}
+
 .nav-links {
     color: #fff;
     display: flex;
@@ -64,6 +68,10 @@
 }
 
 .nav-links-mobile {
+    display: none;
+}
+
+.menu-icon {
     display: none;
 }
 
