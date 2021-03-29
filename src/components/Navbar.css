@@ -6,8 +6,9 @@
     height: 80px; /* Set the height of two <div> elements: */    
     justify-content: center;  /* justify-content property aligns the flexible container's items when the items do not use all available space on the main-axis (horizontally) */   
     position: sticky; /* position: sticky; is positioned based on the user's scroll position. */    
-    top: 0;
-    z-index: 999;
+    top: 0; /* top property affects the vertical position of a positioned element. This property has no effect on non-positioned elements. */    
+    z-index: 999; /* z-index property specifies the stack order of an element. element with greater stack order is always in front of an element with a lower stack order. */
+    
 }
 
 .navbar-container {
