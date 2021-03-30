@@ -1,9 +1,14 @@
+/* align-items: center; Center the alignments for all the items of the flexible <div> element: */
+/* background: linearGradient(); The linear-gradient() function sets a linear gradient as the background image.  */
+/* display: flex; flex property sets the flexible length on flexible items. */
+/* height: 80px; Set the height of two <div> elements: */
+
 .navbar {
-    align-items: center;  /* Center the alignments for all the items of the flexible <div> element: */   
-    background: linear-gradient(90deg, rgb(28,27,27) 0%, rgb(26,23,23) 100%);  /* The linear-gradient() function sets a linear gradient as the background image. */    
-    display: flex; /* flex property sets the flexible length on flexible items. */    
+    align-items: center;   
+    background: linear-gradient(90deg, rgb(28,27,27) 0%, rgb(26,23,23) 100%);  
+    display: flex;     
     font-size: 1.2rem;
-    height: 80px; /* Set the height of two <div> elements: */    
+    height: 80px;   
     justify-content: center;  /* justify-content property aligns the flexible container's items when the items do not use all available space on the main-axis (horizontally) */   
     position: sticky; /* position: sticky; is positioned based on the user's scroll position. */    
     top: 0; /* top property affects the vertical position of a positioned element. This property has no effect on non-positioned elements. */    
@@ -12,10 +17,10 @@
 }
 
 .navbar-container {
-    align-items: center;
-    display: flex;
-    height: 80px;
-    justify-content: center;
+    align-items: center;  
+    display: flex; 
+    height: 80px;  
+    justify-content: center; /* justify-content property aligns the flexible container's items when the items do not use all available space on the main-axis (horizontally) */   
     max-width: 1500px;
 }
 
