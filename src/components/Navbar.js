@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 // useState is a Hook that lets you add React state to function components
 import { Link } from 'react-router-dom';
+import './Navbar.css';
+import { Button } from './Button';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -63,4 +65,4 @@ function Navbar() {
     )
 }
 
-export default Navbar
+export default Navbar;
