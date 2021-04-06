@@ -31,11 +31,12 @@ function Navbar() {
       {/* short syntax for Fragment. allows you to return multiple elements and group a list of children without adding extra nodes to the DOM */}
         <nav className="navbar">
           {/* nav defines a set of navigation links */}
-            <div className=".navbar-container">
-                <Link to="/" className="navbar-logo">
+            <div className="navbar-container">
+                <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                   {/* allows users to navigate around your application. will render a fully accessible anchor tag with the proper href. */}
                   {/* setup a relative link that will direct to landing page */}
-                  DCT <i class="fab fa-wolf-pack-battalion"></i>
+                  DCT 
+                  <i class="fab fa-wolf-pack-battalion"></i>
                 </Link>
                 <div className="menu-icon" onClick={handleClick}>
                   <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
